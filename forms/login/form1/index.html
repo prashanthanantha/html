@@ -1,0 +1,116 @@
+<html>
+<meta name="view-report" content="width=device-width, intial-scale=1.0" />
+<head>
+<style>
+*{
+padding:0;
+margin:0;
+}
+body{
+background-image: url("bg3.crdownload");
+
+}
+.container-fluid{
+padding:25px;
+background:transparent;
+left:50%;
+top:50%;
+position:absolute;
+transform: translate(-50%,-50%);
+width:30%;
+}
+form{
+display:grid;
+}
+input{
+width:100%;
+height:35px;
+border: none;
+border-bottom: 1px solid orange;
+background:transparent;
+color:orange;
+}
+input:focus{
+outline: none;
+}
+
+
+input::placeholder{
+color: orange;
+}
+label{
+padding:10px 0;
+font-size:15px;
+font-weight: bold;
+color:#fff;
+}
+input[type=submit]{
+margin-top:25px;
+width:50%;
+background: orange;
+border: none;
+color: #fff;
+font-size: 13px;
+font-weight: bold;
+}
+.sbtBtn{
+text-align:center;
+}
+.formHeading{
+text-align:center;
+font-size: 25px;
+font-weight: bold;
+color:#fff;
+}
+hr{
+margin-inline:auto;
+width:25%;
+margin-top:2px;
+border: 1px solid orange;
+}
+.signUpLink{
+margin-top:5px;
+font-size: 12px;
+font-weight: bold;
+color:#fff;
+}
+.signUpLink a{
+text-decoration:none;
+color:orange;
+font-size: 13px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border-bottom: 1px solid orange;
+  -webkit-text-fill-color: orange;
+  -webkit-box-shadow: 0 0 0px 1000px none inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+</style>
+</head>
+<body>
+<div class="container-fluid">
+<div class="formHeading">Login</div>
+<hr>
+<form>
+<label for="email">Email</label>
+<input type="text" id="email" placeholder="Ex: abc@xyz.com" />
+<label for="password">Password</label>
+<input type="password" id="password" placeholder="******" />
+<div class="signUpLink">Don't have an account? <a href="#">SignUp</a></div>
+<div class="sbtBtn">
+<input type="submit" value="Submit" />
+</div>
+</form>
+</div>
+</body>
+</html>
